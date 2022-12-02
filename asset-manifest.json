@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/scraper__mismatch/static/css/main.050f6428.css",
+    "main.js": "/scraper__mismatch/static/js/main.880151aa.js",
+    "index.html": "/scraper__mismatch/index.html",
+    "main.050f6428.css.map": "/scraper__mismatch/static/css/main.050f6428.css.map",
+    "main.880151aa.js.map": "/scraper__mismatch/static/js/main.880151aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.050f6428.css",
+    "static/js/main.880151aa.js"
+  ]
+}
