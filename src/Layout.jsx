@@ -6,10 +6,10 @@ import Nav from "./Nav";
 const Layout = () => {
     return (
         <section className="exploreLayout">
-        <Nav />
-        <div className="exploreLayout--children">
-            <Outlet/>
-        </div>
+            <Nav />
+            <div className="exploreLayout--children">
+            <Outlet />
+            </div>
         </section>
     );
 };

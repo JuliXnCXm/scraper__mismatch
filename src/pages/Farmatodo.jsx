@@ -7,6 +7,7 @@ import farmatodo from '../farmatodo.json'
 // import hipermar from '../hipermar.json'
 
 import { useLocation } from 'react-router';
+import SpinnerLoader from '../SpinnerLoader';
 const Store = () => {
 
   const [localData, setLocalData] = useState(farmatodo);
@@ -16,6 +17,7 @@ const Store = () => {
   const [data, setData] = useState([]);
   const { pathname } = useLocation();
   const itemsPerPage = 10;
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     switch (pathname.split("/").at(-1)) {
@@ -43,7 +45,7 @@ const Store = () => {
         return product.nombres_productos.toLowerCase().includes(query);
       });
       setFilteredData(result);
-  }, [data, query]);
+    }, [data, query]);
 
 
   useEffect(() => {
@@ -61,6 +63,19 @@ const Store = () => {
     }
   };
 
+  const handleSearch = (e) => {
+    setLoading(true)
+    const result = localData.filter((product) => {
+      console.log(product)
+      return product.nombres_productos.toLowerCase().includes(query);
+    });
+    setFilteredData(result);
+    console.log(result);
+    setTimeout(() =>{
+      setLoading(false)
+    }, 3000)
+  }
+
   return (
     <>
     <div className="exploreLayout--children__searcher">
@@ -75,10 +90,13 @@ const Store = () => {
             placeholder="Search"
             onChange={(e) => setQuery(e.target.value)}
         />
-      <button className="exploreLayout--children__searcher-button">
+      <button className="exploreLayout--children__searcher-button" onClick={handleSearch}>
             Search
       </button>
     </div>
+    {loading ?
+    <SpinnerLoader />
+    :
     <div onScroll={handleScroll} id="grid--container">
       {filteredData?.map((element, idx) => {
         return (
@@ -94,6 +112,7 @@ const Store = () => {
       })}
       <span></span>
     </div>
+    }
     </>
   );
 }

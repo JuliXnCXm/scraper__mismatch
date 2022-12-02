@@ -11,6 +11,7 @@ let activeClassName = "userNavlist--container__link";
 const { pathname } = useLocation();
 
 return (
+    <div>
     <nav className="userNavlist--container">
         <ul className="userNav--container__list">
         <li>
@@ -77,6 +78,22 @@ return (
         </li>
         </ul>
     </nav>
+    <a
+    href="CV.pdf"
+    className="downloadFile"
+    download="data_farmatodo.csv"
+    target="_blank"
+    >
+    <button
+        href="CV.pdf"
+        className="downloadCsv"
+        download="CV.pdf"
+        target="_blank"
+    >
+        Download Raw data
+    </button>
+    </a>
+    </div>
 );
 }
 

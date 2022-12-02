@@ -13,7 +13,7 @@ const IndexRouter = () => {
     return (
         <AnimatePresence exitBeforeEnter>
         <Routes>
-            <Route path="/" element={<Navigate to="/larebaja" />} />
+            <Route path="/" element={<Navigate to="/stores" />} />
             <Route path="stores" element={<Layout/>}>
                 <Route index element={<Larebaja />} />
                 <Route path="carulla" element={<Carulla />} />
