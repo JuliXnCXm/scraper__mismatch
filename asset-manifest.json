@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/scraper__mismatch/static/css/main.050f6428.css",
-    "main.js": "/scraper__mismatch/static/js/main.880151aa.js",
+    "main.css": "/scraper__mismatch/static/css/main.92ed18ed.css",
+    "main.js": "/scraper__mismatch/static/js/main.888c364b.js",
+    "static/media/data_olimpica.csv": "/scraper__mismatch/static/media/data_olimpica.1ec0a75492667f730937.csv",
+    "static/media/data_carulla.csv": "/scraper__mismatch/static/media/data_carulla.429ced73be9723e930d8.csv",
+    "static/media/data_larebaja.csv": "/scraper__mismatch/static/media/data_larebaja.24cc8c149cbbdab595b3.csv",
+    "static/media/data_farmatodo.csv": "/scraper__mismatch/static/media/data_farmatodo.6446378219e64681aa2d.csv",
     "index.html": "/scraper__mismatch/index.html",
-    "main.050f6428.css.map": "/scraper__mismatch/static/css/main.050f6428.css.map",
-    "main.880151aa.js.map": "/scraper__mismatch/static/js/main.880151aa.js.map"
+    "main.92ed18ed.css.map": "/scraper__mismatch/static/css/main.92ed18ed.css.map",
+    "main.888c364b.js.map": "/scraper__mismatch/static/js/main.888c364b.js.map"
   },
   "entrypoints": [
-    "static/css/main.050f6428.css",
-    "static/js/main.880151aa.js"
+    "static/css/main.92ed18ed.css",
+    "static/js/main.888c364b.js"
   ]
 }
