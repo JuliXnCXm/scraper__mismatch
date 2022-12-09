@@ -1,13 +1,6 @@
-import './App.css';
-import IndexRouter from './IndexRouter';
+import './styles/App.css';
+import IndexRouter from './routes/IndexRouter';
 function App() {
-  const Mock = {
-    "carulla": {},
-    "la_rebaja": {},
-    "farmatodo": {},
-    "hipermar": {},
-    "olimpica": {},
-  }
 
   return (
     <div className="App">
