@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/scraper__mismatch/static/css/main.92ed18ed.css",
-    "main.js": "/scraper__mismatch/static/js/main.888c364b.js",
+    "main.css": "/scraper__mismatch/static/css/main.67125715.css",
+    "main.js": "/scraper__mismatch/static/js/main.4cc08a17.js",
     "static/media/data_olimpica.csv": "/scraper__mismatch/static/media/data_olimpica.1ec0a75492667f730937.csv",
-    "static/media/data_carulla.csv": "/scraper__mismatch/static/media/data_carulla.429ced73be9723e930d8.csv",
-    "static/media/data_larebaja.csv": "/scraper__mismatch/static/media/data_larebaja.24cc8c149cbbdab595b3.csv",
-    "static/media/data_farmatodo.csv": "/scraper__mismatch/static/media/data_farmatodo.6446378219e64681aa2d.csv",
+    "static/media/data_carulla.csv": "/scraper__mismatch/static/media/data_carulla.b0a6f13580f1db6ec806.csv",
+    "static/media/data_larebaja.csv": "/scraper__mismatch/static/media/data_larebaja.b72e45086984f79f225a.csv",
+    "static/media/data_farmatodo.csv": "/scraper__mismatch/static/media/data_farmatodo.46f2da5011873071873d.csv",
+    "static/media/data_hipermar.csv": "/scraper__mismatch/static/media/data_hipermar.8cfbd2be97f2a8b245e0.csv",
     "index.html": "/scraper__mismatch/index.html",
-    "main.92ed18ed.css.map": "/scraper__mismatch/static/css/main.92ed18ed.css.map",
-    "main.888c364b.js.map": "/scraper__mismatch/static/js/main.888c364b.js.map"
+    "main.67125715.css.map": "/scraper__mismatch/static/css/main.67125715.css.map",
+    "main.4cc08a17.js.map": "/scraper__mismatch/static/js/main.4cc08a17.js.map"
   },
   "entrypoints": [
-    "static/css/main.92ed18ed.css",
-    "static/js/main.888c364b.js"
+    "static/css/main.67125715.css",
+    "static/js/main.4cc08a17.js"
   ]
 }
