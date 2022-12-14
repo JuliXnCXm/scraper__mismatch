@@ -18,7 +18,7 @@ const Nav = () => {
             case "carulla":
                     return require("../assets/data_carulla.csv");
             case "hipermar":
-                return ""
+                    return require("../assets/data_hipermar.csv");
             default:
                 return require("../assets/data_larebaja.csv")
         }

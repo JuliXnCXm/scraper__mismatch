@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import '../styles/Store.css'
 import SpinnerLoader from '../SpinnerLoader';
 import { useLocation } from 'react-router';
@@ -15,7 +15,7 @@ const Store = () => {
       case "carulla":
         return require("../localData/carulla.json")
       case "hipermar":
-        return "";
+          return require("../localData/hipermar.json")
       default:
         return require("../localData/larebaja.json");
     }
@@ -52,7 +52,9 @@ const Store = () => {
   const handleSearch = (e) => {
     setLoading(true)
     const result = localData.filter((product) => {
-      return product.nombres_productos.toLowerCase().includes(query);
+      return (
+        product.nombres_productos.toLowerCase().includes(query)
+      );
     });
     setFilteredData(result);
     setTimeout(() =>{
