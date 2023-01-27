@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react'
 import '../styles/Store.css'
 import SpinnerLoader from '../SpinnerLoader';
 import { useLocation } from 'react-router';
-
+import Image from '../components/Image';
 const Store = () => {
   const { pathname } = useLocation();
   const [skip, setSkip] = useState(10);
@@ -16,6 +16,8 @@ const Store = () => {
         return require("../localData/carulla.json")
       case "hipermar":
           return require("../localData/hipermar.json")
+      case "canaveral":
+          return require("../localData/cañaveral.json")
       default:
         return require("../localData/larebaja.json");
     }
@@ -87,7 +89,7 @@ const Store = () => {
         {filteredData?.map((element, idx) => {
           return (
             <div key={idx} id="product--container">
-              <img src={element?.imagenes} alt="" />
+            <Image source={element?.imagenes}/>
               <div>
                 <span>Nombre: {element?.nombres_productos}</span>
                 <span>Categoria: {element?.categoria}</span>
