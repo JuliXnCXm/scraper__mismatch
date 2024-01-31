@@ -21,6 +21,8 @@ const Nav = () => {
                     return require("../assets/data_hipermar.csv");
             case "canaveral":
                     return require("../assets/data_canaveral.csv");
+            case "exito":
+                    return require("../assets/data_exito.csv");
             default:
                 return require("../assets/data_larebaja.csv")
         }
@@ -99,6 +101,20 @@ return (
             <div>
                 <div className="user_Line-nav"></div>
                 <span>Olimpica</span>
+            </div>
+            </NavLink>
+        </li>
+        <li
+            onClick={() => window.location.reload()}
+        >
+            <NavLink
+            to="/stores/exito"
+            className={({ isActive }) => (isActive ? activeClassName : undefined)}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+            <div>
+                <div className="user_Line-nav"></div>
+                <span>Exito</span>
             </div>
             </NavLink>
         </li>

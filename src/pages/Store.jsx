@@ -18,6 +18,8 @@ const Store = () => {
           return require("../localData/hipermar.json")
       case "canaveral":
           return require("../localData/cañaveral.json")
+      case "exito":
+          return require("../localData/exito.json")
       default:
         return require("../localData/larebaja.json");
     }
